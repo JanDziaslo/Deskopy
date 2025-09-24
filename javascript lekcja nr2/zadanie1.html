@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>pętle</title>
+</head>
+<body>
+<script>
+    var x=prompt("podaj wartość x");
+    for (var z=1 ; z<=x; z++)
+    {
+        document.write("<br>"+z);
+    }
+
+    var i = 1;
+    var liczbaParzysta = 0;
+
+    while (i <= x) {
+        if (i % 2 === 0) {
+            liczbaParzysta++;
+        }
+        i++;
+    }
+
+    document.write("<br>ilosc liczb parzystych "+x+": " + liczbaParzysta);
+</script>
+</body>
+</html>

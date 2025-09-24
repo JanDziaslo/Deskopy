@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<body>
+<script>
+
+
+    function BMI(wzrost, waga)
+    {
+        return waga / (wzrost * wzrost);
+    }
+    var wzrost = Number(prompt("Podaj wzrost w metrach"));
+    var waga = Number(prompt("Podaj wage w kilogramach"));
+    document.write('Twoje BMI to: '+BMI(wzrost, waga).toFixed(2));
+    var czydobreBMI = BMI(wzrost, waga);
+    if(czydobreBMI<18.5)
+        document.write('<br>Nie dobre BMI');
+    else if(czydobreBMI>=18.5 && czydobreBMI<24.9)
+        document.write('<br>Dobre BMI');
+    else if(czydobreBMI>=25 && czydobreBMI<100)
+        document.write('<br>Nie dobre BMI');
+
+
+</script>
+
+</body>
+</html>

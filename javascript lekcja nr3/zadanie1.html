@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+</head>
+<body>
+<script>
+
+    function euro(cena)
+    {
+        return cena/4.27;
+    }
+    function funt (cena)
+    {
+        return cena/4.89;
+    }
+    var cena=Number(prompt("Podaj cene towaru"));
+    document.write('cena w euro to: '+euro(cena).toFixed(2)+'<br>');
+    document.write('cena w funtach to: '+funt(cena).toFixed(2));
+</script>
+
+</body>
+</html>
