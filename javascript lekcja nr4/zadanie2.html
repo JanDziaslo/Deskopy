@@ -16,8 +16,12 @@
     function polekwadratu(a) {
         return a * a;
     }
+    function poleProstopadloscianu(a, b) {
+        return 2 * (a * a) + 4 * (a * b);
+    }
     document.write("pole prostokąta o bokach " + bok1 + " i " + bok2 + " to: " + poleProstokata(bok1, bok2));
     document.write("<br>pole kwadratu o boku " + bok1 + " to: " + polekwadratu(bok1));
+    document.write("<br>pole powierzchni prostopadłościanu o podstawie kwadratu o boku " + bok1 + " i wysokości " + bok2 + " to: " + poleProstopadloscianu(bok1, bok2));
 </script>
 
 </body>
