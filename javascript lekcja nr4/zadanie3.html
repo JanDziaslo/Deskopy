@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+</head>
+<body>
+<script>
+    function zliczaj(n) {
+        let ujemne = 0;
+        let nieujemne = 0;
+        for (let i = 0; i < n; i++) {
+            let liczba = parseFloat(prompt(`Podaj liczbę ${i + 1}:`));
+            if (liczba < 0) {
+                ujemne++;
+            }
+            else {
+                nieujemne++;
+            }
+        }
+        alert(`Liczby ujemne: ${ujemne}\nLiczby nieujemne: ${nieujemne}`);
+    }
+
+    let n = Number(prompt("Ile liczb chcesz wprowadzić?"));
+    zliczaj(n);
+</script>
+
+</body>
+</html>
