@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+</head>
+<body>
+<script>
+  var liczba1 =Number(prompt("Podaj pierwszą liczbę: "))
+  var liczba2 = Number(prompt("Podaj drugą liczbę: "))
+  function nwd(a, b) {
+      while (b !== 0) {
+          let temp = b;
+          b = a % b;
+          a = temp;
+      }
+      return a;
+  }
+    document.write("Największy wspólny dzielnik liczb " + liczba1 + " i " + liczba2 + " to: " + nwd(liczba1, liczba2));
+</script>
+
+</body>
+</html>
