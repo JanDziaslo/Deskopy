@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<body>
+<script>
+
+    var bok1 =Number(prompt("Podaj długość pierwszego boku: "))
+    var bok2 = Number(prompt("Podaj długość drugiego boku: "))
+
+    function poleProstokata(a, b) {
+        return a * b;
+    }
+    function polekwadratu(a) {
+        return a * a;
+    }
+    document.write("pole prostokąta o bokach " + bok1 + " i " + bok2 + " to: " + poleProstokata(bok1, bok2));
+    document.write("<br>pole kwadratu o boku " + bok1 + " to: " + polekwadratu(bok1));
+</script>
+
+</body>
+</html>
