@@ -1,0 +1,52 @@
+*
+{
+    font-family: cambria;
+    color: black;
+    background-color: Antiquewhite;
+}
+header
+{
+    background: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer
+{
+    background: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main
+{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: linen;
+}
+
+.opa
+{
+    flex: 1;
+}
+
+aside
+{
+    flex: 0 0 300px;
+    background-color: wheat;
+    padding: 15px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    color: peru;
+}
+article
+{
+    border-color: sienna;
+}
