@@ -49,4 +49,22 @@ a:hover
 article
 {
     border-color: sienna;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+article:hover
+{
+    background-color: #fef6e4;
+
+}
+aside
+{
+    width: 25%;
+    background-color: #fef6e4;
+    font-size: 90%;
+}
+footer
+{
+    border-top: 2pxs sienna;
 }
