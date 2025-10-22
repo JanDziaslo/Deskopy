@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<body>
+<script>
+var tablica=[];
+for(var i=0;i<10;i++)
+{
+    var liczba = Math.floor(Math.random() * 50) + 1;
+    tablica.push(liczba);
+}
+document.write("Tablica: " + tablica + "<br>");
+
+var liczbyPodzielne = [];
+for(var i=0; i<tablica.length; i++)
+{
+    if(tablica[i] % 3 === 0)
+    {
+        liczbyPodzielne.push(tablica[i]);
+    }
+}
+
+document.write("Liczby podzielne przez 3: " + liczbyPodzielne + "<br>");
+
+var suma = 0;
+for(var i=0; i<liczbyPodzielne.length; i++)
+{
+    suma += liczbyPodzielne[i];
+}
+
+var srednia = suma / liczbyPodzielne.length;
+document.write("Średnia arytmetyczna: " + srednia);
+
+</script>
+
+</body>
+</html>
