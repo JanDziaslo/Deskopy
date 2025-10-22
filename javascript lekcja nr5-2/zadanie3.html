@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+    <style>
+        table
+        {
+            border: 10px solid green;
+            background-color: green;
+        }
+        img
+        {
+            width: 150px;
+            height: 150px;
+        }
+        #tresc
+        {
+            background-color: lightblue;
+            padding: 20px;
+            width: 752px;
+            text-align: center;
+        }
+        #wynik
+        {
+            padding: 5px;
+            width: 782px;
+            text-align: center;
+            background-color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="tabela">
+    <table id="dane">
+        <tr>
+            <td>
+                <img src="img/slonce.jpg" alt="słonce" onclick="slonce()">
+            </td>
+            <td>
+                <img src="img/merkury.jpg" alt="merkury" onclick="merkury()">
+            </td>
+            <td>
+                <img src="img/wenus.webp" alt="wenus" onclick="wenus()">
+            </td>
+            <td>
+                <img src="img/ziemia.jpg" alt="ziemia" onclick="ziemia()">
+            </td>
+            <td>
+                <img src="img/mars.jpeg" alt="mars" onclick="mars()">
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <div id="wynik">SŁOŃCE</div>
+    <div id="tresc">Słońce jest gwiazdą centralną Układu Słonecznego.</div>
+
+<script>
+    function slonce()
+    {
+        document.getElementById("wynik").innerHTML="SŁOŃCE";
+        document.getElementById("tresc").innerHTML="Słońce jest gwiazdą centralną Układu Słonecznego.";
+    }
+    function merkury()
+    {
+        document.getElementById("wynik").innerHTML="MERKURY";
+        document.getElementById("tresc").innerHTML="Merkury jest najmniejszą i najbliższą Słońcu planetą Układu Słonecznego.";
+    }
+    function wenus()
+    {
+        document.getElementById("wynik").innerHTML="WENUS";
+        document.getElementById("tresc").innerHTML="Wenus jest drugą planetą od Słońca i jest podobna do Ziemi pod względem rozmiaru i masy.";
+    }
+    function ziemia()
+    {
+        document.getElementById("wynik").innerHTML="ZIEMIA";
+        document.getElementById("tresc").innerHTML="Ziemia jest trzecią planetą od Słońca i jedyną znaną planetą, na której istnieje życie. (a przynajmniej w układzie słonecznym i okolicy)";
+    }
+    function mars()
+    {
+        document.getElementById("wynik").innerHTML="MARS";
+        document.getElementById("tresc").innerHTML="Mars jest czwartą planetą od Słońca i jest znany jako Czerwona Planeta ze względu na swój charakterystyczny kolor.";
+    }
+
+</script>
+</body>
+</html>
